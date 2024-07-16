@@ -6,17 +6,23 @@
 </head>
 <body>
   <form action="">
+    <fieldset><legend>
+     <h3> personal information</h3>
+    </legend>
     <p>USER number :
       <input type="number" name="user number" size="15" maxlength="30" ></p><br><br>
       <P>USER name :
 
       <input type="text" name="user name" size="15" maxlength="30" ></P><BR><br>
 
+        <p>date of birth :
+          <input required id="date" type="date" name="date"></p><br>
+
         <P> PASSWORD :
-          <input type="password" name="PASSWORD" size="15" maxlength="30" ></P><br>
+          <input type="password" name="PASSWORD" size="15" maxlength="30" ></P><br></fieldset>
 
           <p><textarea name="commnents message"cols="20" rows="4">ADD YOUR COMMENTS HERE</textarea> </p>
-
+         <fieldset><legend><h2>your selection area</h2></legend>
           <h2 style="background-color: lightgreen;"><U>RADIO BUTTON</U></h2><br>
 
           <input type="radio" name="MALE" size="15" maxlength="30" ><B>MALE</B>
@@ -32,7 +38,8 @@
             <input type="checkbox" name="kiwi" size="15" maxlength="30" ><B>kiwi</B>
             <input type="checkbox" name="watermellon" size="15" maxlength="30" ><B>watermellon</B>
             <input type="checkbox" name="mango" size="15" maxlength="30" ><B>mango</B><br>
-
+          </fieldset>
+          <fieldset><legend><h2 style="text-align: center;">dropdown menu button and submit area</h2></legend>
             <h2 style="background-color: lightgreen;"><U>DROPDOWN LIST</U></h2>
             <H3>SELECT YOUR COUNTRY NAME</H3>
             <select name="COUNTRY">
@@ -55,9 +62,22 @@
 
            <input type="submit" value="submit"><br>
 
-           <!-- <input type="image" src="D:\HTML,CSS AND JAVA FROM SAYLANI MALIR CAMPUS GOHAR GREEN CITY\table assignment\smit image.jpg"><br> -->
+           <input type="image" src="D:\HTML,CSS AND JAVA FROM SAYLANI MALIR CAMPUS GOHAR GREEN CITY\table assignment\smit image.jpg"><br>
 
            <input type="hidden" value="submit" src="D:\HTML,CSS AND JAVA FROM SAYLANI MALIR CAMPUS GOHAR GREEN CITY\table assignment\smit image.jpg"><br>
+          </fieldset>
+          <fieldset><legend><h3> form validation section </h3></legend>
+
+           <p>USER number :
+      <input required type="number" name="user number" size="15" maxlength="30" ></p><br><br>
+      <P>USER name :
+
+      <input required type="text" name="user name" size="15" maxlength="30" ></P><BR><br>
+
+        <P> PASSWORD :
+          <input required  type="password" name="PASSWORD" size="15" maxlength="30" ></P>
+          <input type="submit" value="submit">
+          </fieldset>
 
         
 
